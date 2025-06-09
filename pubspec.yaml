@@ -1,0 +1,54 @@
+name: clone_insta
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  carousel_slider: ^5.0.0
+  font_awesome_icon_class: ^0.0.6
+  video_player: ^2.9.5
+  marquee: ^2.2.3
+  photo_manager: ^3.7.1
+  http: ^1.4.0
+  path_provider: ^2.1.5
+  loading_animation_widget: ^1.3.0
+  image_picker: ^1.1.2
+  random_string: ^2.3.1
+  intl: ^0.20.2
+  font_awesome_flutter: ^10.8.0
+  shared_preferences: ^2.3.3
+  visibility_detector: ^0.4.0+2
+  uuid: ^4.5.1
+  flutter_sound_record: ^3.3.2
+  permission_handler: ^11.3.1
+  just_audio: ^0.9.46
+  cached_network_image: ^3.4.1
+  cloud_firestore: ^5.6.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+flutter:
+
+  uses-material-design: true
+  assets:
+      - asset/images/
+      - asset/videos/
+      - asset/icon/
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: asset/font/static/Manrope-Regular.ttf
+          style: normal
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "asset/icon/app_image.jpg"
