@@ -14,7 +14,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 // ignore: depend_on_referenced_packages
-import 'package:path/path.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:random_string/random_string.dart';
 import 'package:just_audio/just_audio.dart';
@@ -151,7 +150,7 @@ class _ChatRoomState extends State<ChatRoom> {
           await _selectImage!.delete();
         }
 
-        String message = imageUrl ?? "";
+        String message = imageUrl;
 
         DateTime now = DateTime.now();
         String formatedDate = DateFormat('h:mma').format(now);
@@ -274,6 +273,7 @@ class _ChatRoomState extends State<ChatRoom> {
                                         _currentlyPlayingMessage = audioPath;
                                       });
                                     } catch (e) {
+                                      // ignore: avoid_print
                                       print("Error playing audio: $e");
                                     }
                                   }

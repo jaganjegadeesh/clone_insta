@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'dart:convert';
 
 import 'package:cached_network_image/cached_network_image.dart';
@@ -20,6 +22,7 @@ class ChatHome extends StatefulWidget {
 
 class _ChatHomeState extends State<ChatHome> {
   bool _isLoading = true;
+  // ignore: unused_field
   bool _isSearchLoading = false;
   String search = "";
   UserModel? user;
@@ -58,7 +61,6 @@ class _ChatHomeState extends State<ChatHome> {
               "profile": item['profile'] ?? '',
             });
           }
-          // ignore: avoid_print
           print("friends URLs: $friends");
         }
       }
@@ -91,7 +93,6 @@ class _ChatHomeState extends State<ChatHome> {
               "profile": item['profile'] ?? '',
             });
           }
-          // ignore: avoid_print
           print("friends URLs: $search_friends");
           setState(() {
             _isSearchLoading = false;
@@ -169,8 +170,8 @@ class _ChatHomeState extends State<ChatHome> {
 
                             return Padding(
                               padding: const EdgeInsets.symmetric(
-                                vertical: 1.0,
-                                horizontal: 4.0,
+                                vertical: 2.0,
+                                horizontal: 10.0,
                               ),
                               child: Card(
                                 child: ListTile(
