@@ -1,16 +1,28 @@
 # clone_insta
 
-A new Flutter project.
+ Features
+✅ User stories (with horizontal scroll)
+✅ Feed posts with likes, comments, and save state
+✅ Reels-style video scrolling
+✅ User profile with grid posts
+✅ Local storage for posts and media (optional: photo_manager integration)
+✅ Double-tap heart animation
+✅ Responsive design
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is my starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+https://github.com/jaganjegadeesh/clone_insta.git
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Prerequisites
+1️⃣ Flutter
+2️⃣ Clone the Repo
+3️⃣ Install Dependencies - flutter pub get
+4️⃣ Run Locally:
+    before run flutter run you need to change the api url in constant/const.dart and the ipaddress in android\app\src\main\res\xml\network_security_config.xml
+    https://github.com/jaganjegadeesh/php_insta_clone.git
+    this is back end php files you need to put it in xampp/htdoc
+    your must be call the backend folder 
+    to get ip address in comment prompt put "ipconfig"
+    
